@@ -3,7 +3,7 @@ package lab_2.individual_lab;
 import kareltherobot.*;
 import java.awt.Color;
 
-public class Problem2 extends Robot
+public class Problem2 extends Problem1
 {
    
     /**
@@ -15,6 +15,58 @@ public class Problem2 extends Robot
     }
 
     public void setField(){
-        
+        setPins();
+        setTop();
+    }
+    
+    public void setTop() {
+        topPos();
+        row1();
+        row2();
+        row3();
+    }
+    public void row2(){
+        turnLeft();
+        move();
+        turnLeft();
+        move();
+        putBeeper();
+        move();
+        move();
+        putBeeper();
+    }
+    public void row3(){
+        turnLeft();
+        turnLeft();
+        turnLeft();
+        move();
+        turnLeft();
+        turnLeft();
+        turnLeft();
+        move();
+        putBeeper();
+        move();
+    }
+    public void row1(){
+        turnLeft();
+        turnLeft();
+        turnLeft();
+        putBeeper();
+        move();
+        move();
+        putBeeper();
+        move();
+        move();
+        putBeeper();
+    }
+    public void topPos(){
+        move();
+        turnLeft();
+        turnLeft();
+        turnLeft();
+        move();
+        move();
+        move();
+        move();
     }
 }

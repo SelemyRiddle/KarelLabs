@@ -17,9 +17,105 @@ public class Harvester extends Robot
     
     public void harvest() {
         //Complete this method, using the methods you create below so that all rows are harvested
+        pickall();
+        turnLeft();
+        turnLeft();
+        putRow();
+        repositionPut();
+        putPos();
+        putRow();
+        repositionPut();
+        putPos();
+        putRow();
+        repositionPut();
+        turnOff();
     }
     //your methods go below
-    
-    
+    /**
+     * Precondition: Robot facing East 1 block from row of beepers
+     * Postcondition: Robot facing East, two streets above original position
+     */
+    public void pickRow(){
+        move();
+        pickBeeper();
+        move();
+        pickBeeper();
+        move();
+        pickBeeper();
+        move();
+        pickBeeper();
+        move();
+        pickBeeper();
+        }
+    public void repositionPick(){
+        turnLeft();
+        move();
+        turnLeft();
+        pickBeeper();
+        move();
+        pickBeeper();
+        move();
+        pickBeeper();
+        move();
+        pickBeeper();
+        move();
+        pickBeeper();
+        move();
+    }
+    public void startPos(){
+        turnLeft();
+        turnLeft();
+        turnLeft();
+        move();
+        turnLeft();
+        turnLeft();
+        turnLeft();
+    }
+    public void pickall(){
+        pickRow();
+        repositionPick();
+        startPos();
+        pickRow();
+        repositionPick();
+        startPos();
+        pickRow();
+        repositionPick();
+    }
+    public void putRow(){
+        move();
+        putBeeper();
+        move();
+        putBeeper();
+        move();
+        putBeeper();
+        move();
+        putBeeper();
+        move();
+        putBeeper();
+    }
+    public void repositionPut(){
+        turnLeft();
+        turnLeft();
+        turnLeft();
+        move();
+        turnLeft();
+        turnLeft();
+        turnLeft();
+        putBeeper();
+        move();
+        putBeeper();
+        move();
+        putBeeper();
+        move();
+        putBeeper();
+        move();
+        putBeeper();
+        move();
+    }
+    public void putPos(){
+        turnLeft();
+        move();
+        turnLeft();
+    }
 }
 

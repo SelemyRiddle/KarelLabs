@@ -1,4 +1,13 @@
 #BlueJ class context
-comment0.params=
-comment0.target=void\ setPins()
-numComments=1
+comment0.target=Problem1
+comment1.params=
+comment1.target=void\ setPins()
+comment2.params=
+comment2.target=void\ setRow1()
+comment3.params=
+comment3.target=void\ setRow2()
+comment4.params=
+comment4.target=void\ setRow3()
+comment5.params=
+comment5.target=void\ setRow4()
+numComments=6

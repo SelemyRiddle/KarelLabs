@@ -13,7 +13,8 @@ import java.awt.Color;
 public class Problem2Driver implements Directions
 {
     public static void main(String args[])  {
-        Problem2 karel = new Problem2(1, 5, North, 16);
+        Problem2 karel = new Problem2(5, 1, East, 16);
+        
         karel.setField();
         karel.turnOff();
     } 

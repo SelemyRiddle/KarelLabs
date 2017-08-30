@@ -1,4 +1,15 @@
 #BlueJ class context
-comment0.params=
-comment0.target=void\ setField()
-numComments=1
+comment0.target=Problem2
+comment1.params=
+comment1.target=void\ setField()
+comment2.params=
+comment2.target=void\ setTop()
+comment3.params=
+comment3.target=void\ row2()
+comment4.params=
+comment4.target=void\ row3()
+comment5.params=
+comment5.target=void\ row1()
+comment6.params=
+comment6.target=void\ topPos()
+numComments=7
