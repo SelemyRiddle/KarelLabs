@@ -15,7 +15,80 @@ public class Problem2 extends Robot
     }
 
     public void carpetRooms(){
-        
+        move();
+        checkRoom();
+        move();
+        checkRoom();
+        move();
+        checkRoom();
+        move();
+        checkRoom();
+        move();
+        checkRoom();
+        move();
+        checkRoom();
+        move();
+        checkRoom();
+        move();
+        checkRoom();
     }
+    public void move2(){
+        move();
+        move();
+    }
+    public void checkRoom(){
+        turnLeft();
+        move();
+        if (frontIsClear()==false){
+            turnLeft();
+            if (frontIsClear()==false){
+                turnLeft();
+                turnLeft();
+                if (frontIsClear()==false){
+                    putBeeper();
+                    turnLeft();
+                    turnLeft();
+                    turnLeft();
+                    move();
+                    turnLeft();
+                }
+                else{
+                    notARoom();
+                }
+        }
+            else{
+                notARoom();
+            }
+            
+        }
+        else{
+            notARoom();
+        }
+    }
+    
+    public void notARoom(){
+        if (facingNorth()==true){
+            turnLeft();
+            turnLeft();
+            move();
+            turnLeft();
+        }
+        else{
+            if (facingEast()==true){
+            turnLeft();
+                    turnLeft();
+                    turnLeft();
+                    move();
+                    turnLeft();
+                }
+            else{
+                if (facingWest()==true){
+                    turnLeft();
+                    move();
+                    turnLeft();
+                }
+            }
+        }
 }
 
+}
